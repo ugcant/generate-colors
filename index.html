@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+    <script
+      src="https://kit.fontawesome.com/492f9d2639.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/scripts/app.js" defer></script>
+
+    <title>Generate Colors</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>What is your color?</h1>
+      <div class="content-bottom">
+        <form id="user-color" method="POST">
+          <label for="hex">
+            <span>HEX</span>
+            <input
+              type="text"
+              name="hex"
+              id="hex"
+              value="#"
+              minlength="4"
+              maxlength="7"
+            />
+          </label>
+          <label for="rgb">
+            <span>RGB</span>
+            <input type="text" name="rgb1" id="rgb1" maxlength="3" />
+            <input type="text" name="rgb2" id="rgb2" maxlength="3" />
+            <input type="text" name="rgb3" id="rgb3" maxlength="3" />
+          </label>
+          <label for="hsl">
+            <span>HSL</span>
+            <input type="text" name="hsl1" id="hsl1" maxlength="3" />
+            <input type="text" name="hsl2" id="hsl2" maxlength="3" />
+            <input type="text" name="hsl3" id="hsl3" maxlength="3" />
+          </label>
+          <div class="button-area">
+            <button type="submit" id="user-choice">Submit</button>
+            <button id="random-color"><i class="fa-solid fa-dice"></i></button>
+            <button type="reset" id="reset-btn">Reset</button>
+          </div>
+        </form>
+        <p>Please reset before entering your color code!</p>
+        <a href="https://github.com/ugcant">ugcant</a>
+      </div>
+    </div>
+  </body>
+</html>
