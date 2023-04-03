@@ -6,33 +6,12 @@
 box-sizing: border-box;
 }
 /*
-2. Remove default margin
-*/
-* {
-margin: 0;
-}
-/*
 3. Allow percentage-based heights in the application
 */
 html, body {
 height: 100%;
 }
 /*
-Typographic tweaks!
-4. Add accessible line-height
-5. Improve text rendering
-*/
-body {
-line-height: 1.5;
--webkit-font-smoothing: antialiased;
-}
-/*
-6. Improve media defaults
-*/
-img, picture, video, canvas, svg {
-display: block;
-max-width: 100%;
-}
 /*
 7. Remove built-in form typography styles
 */
@@ -40,23 +19,15 @@ input, button, textarea, select {
 font: inherit;
 }
 /*
-8. Avoid text overflows
-*/
-p, h1, h2, h3, h4, h5, h6 {
-overflow-wrap: break-word;
-}
 
 /* general styling */
-
 body {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     font-size: 12px;
-
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -66,17 +37,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background: linear-gradient(to right, #140f2d5c, #f49c3758);
-    padding: 4em;
-
+    padding: 3em;
     margin-left: 1em;
     margin-right: 1em;
-
     border-radius: 10px;
-
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     animation: fadeInAnimation ease 3s;
 }
 
@@ -96,63 +62,49 @@ body {
 }
 
 /* form styling */
-
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5em;
-
     font-size: 1rem;
 }
 
-
 /* header styling */
-.content > h1 {
+h1 {
     font-size: 1.5rem;
     margin-bottom: .5em;
-
 }
 
 /* button and inputs styling */
-.content > .content-bottom  button {
+button {
    background: #F49D37;
-   color: white;
+    color: white;
     border: none;
-    font-size: 1.05rem;
-
     padding: .5em 1.25em .5em 1.25em;
-
     border-radius: 5px;
-
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     
 }
-
-.content > .content-bottom  button:hover {
+button:hover {
     background-color: #ff8c098c;
-
 }
-
 input {
-    background: white;
+    background: rgba(255, 255, 255, 0.688);
     border: none;
     padding-left: 5px;
     border-radius: 5px;
 }
-
 #hex {
     width: 160px;
 }
-
 input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
     width: 50px;
 }
 
 /* text styling */
-
 p{
     margin-top: 1em;
     font-size: 1rem;
@@ -162,27 +114,18 @@ p{
     animation-duration: 8s;
     margin-bottom: 1em;
 }
-
-
 @keyframes changeColor {
     0%   {color: black;}
     25%  {color: purple;}
     50%  {color: green;}
     100% {color: blue;}
   }
-
-span {
-    cursor: pointer;}
-
 a {
-    font-size: 1rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.858);
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    letter-spacing:3.5px;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #140f2d63;
+    color: #140f2d9f;
 }
