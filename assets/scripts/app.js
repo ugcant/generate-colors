@@ -3,9 +3,6 @@ const inputHex = document.querySelector("#hex");
 const inputR = document.querySelector("#r");
 const inputB = document.querySelector("#g");
 const inputG = document.querySelector("#b");
-const inputH = document.querySelector("#h");
-const inputS = document.querySelector("#s");
-const inputL = document.querySelector("#l");
 const resetBtn = document.querySelector("#reset-btn");
 const randomColorBtn = document.querySelector("#random-color");
 
@@ -19,10 +16,6 @@ colorForm.addEventListener("submit", (e) => {
   const r = inputR.value.toString();
   const g = inputG.value.toString();
   const b = inputB.value.toString();
-  const h = inputH.value.toString();
-  const s = inputS.value.toString();
-  const l = inputL.value.toString();
-
   const r1 = inputR.value;
   const g1 = inputG.value;
   const b1 = inputB.value;
@@ -36,15 +29,6 @@ colorForm.addEventListener("submit", (e) => {
       (document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`),
       rgbToHex(r1, g1, b1)
     );
-  } else if (
-    (h.length <= 3,
-    h.length >= 1,
-    l.length > 1,
-    l.length <= 4,
-    s.length > 1,
-    s.length <= 4)
-  ) {
-    return (document.body.style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`);
   }
 });
 
